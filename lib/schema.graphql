@@ -1,0 +1,12 @@
+schema {
+  query: Query
+}
+
+type Query {
+  listPost: [Post]
+}
+
+type Post {
+  title: String
+  id: ID
+}
