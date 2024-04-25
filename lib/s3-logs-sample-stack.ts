@@ -70,13 +70,5 @@ export class S3LogsSampleStack extends cdk.Stack {
       ),
       runtime: appsync.FunctionRuntime.JS_1_0_0,
     });
-
-    new cdk.CfnOutput(this, "s3bucketEndpoint", {
-      value: myBucket.bucketDomainName,
-    });
-
-    new cdk.CfnOutput(this, "s3bucketRegionalEndpoint", {
-      value: myBucket.bucketRegionalDomainName,
-    });
   }
 }
